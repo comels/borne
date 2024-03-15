@@ -1,7 +1,7 @@
-import Buttons from "../components/Buttons";
+import Button2 from "../components/Buttons2";
 
 const Home = () => {
-  return <Buttons />;
+  return <Button2 />;
 };
 
 export default Home;
