@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 
 const Button = () => {
+
+  // Listes des démarches
   const actions = [
     {
       title: "Démarches administratives",
@@ -26,7 +28,7 @@ const Button = () => {
       ],
     },
     {
-      title: "Titre 2",
+      title: "Démarches 2",
       href: "#",
       bgcolor: "bg-orange-500",
       demarches: [
@@ -41,7 +43,7 @@ const Button = () => {
       ],
     },
     {
-      title: "Titre 3",
+      title: "Démarches 3",
       href: "#",
       bgcolor: "bg-teal-500",
       demarches: [
@@ -56,7 +58,7 @@ const Button = () => {
       ],
     },
     {
-      title: "Titre 4",
+      title: "Démarches 4",
       href: "#",
       bgcolor: "bg-yellow-500",
       demarches: [
@@ -71,6 +73,8 @@ const Button = () => {
       ],
     },
   ];
+
+  // Affichage des démarches
   return (
     <div className="grid h-screen grid-cols-2 gap-3 rounded-lg p-5">
       {actions.map((action, index) => (

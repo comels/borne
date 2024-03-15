@@ -7,6 +7,7 @@ const Pages = ({ src, title }) => {
     <div>
       <Nav />
       <div className=" h-screen w-screen">
+        {/* Affichage du spinner de chargement en attendant l'affichage du iframe */}
         {isLoading && (
           <div className="h-screen bg-white">
             <div className="flex h-full flex-col items-center justify-center gap-5">
@@ -21,6 +22,7 @@ const Pages = ({ src, title }) => {
             </div>
           </div>
         )}
+        {/* Affichage du iframe */}
         <iframe
           src={src}
           title={title}

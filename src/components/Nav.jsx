@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
 import { PiKeyReturn } from "react-icons/pi";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -9,7 +9,7 @@ const Nav = () => {
         className="flex max-w-xs items-center justify-center gap-4 rounded-lg bg-white py-2 text-xl font-medium text-sky-700"
       >
         <PiKeyReturn size={32} className="text-sky-700" />
-        Retourner à l'accueil
+        Retourner à l&apos;accueil
       </NavLink>
     </div>
   );

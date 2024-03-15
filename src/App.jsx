@@ -7,6 +7,7 @@ import Pages from "./pages/Pages";
 import Redirect from "./hooks/Redirect";
 
 const App = () => {
+  // Fonction pour remonter en haut de la page quand on change de route
   const ScrollToTop = () => {
     const { pathname } = useLocation();
 
@@ -20,10 +21,15 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
+        {/* Redirection à la page d'accueil après 5 minutes d'inactivité */}
         <Redirect timeout={180000} /> {/* 5 minutes */}
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* C'est ici que l'on déclare les routes, il faut indiquer le chemin
+          et le composant à afficher. Ici quand on va sur la route
+          /declare-impots, on affiche le composant <Pages /> avec les props src
+          et title. */}
           <Route
             path="/declare-impots"
             element={
